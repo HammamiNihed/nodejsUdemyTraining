@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
-mongoose.connect('mongodb://127.0.0.1:27017/apidb')
+mongoose.connect('mongodb+srv://nihed:nihed@cluster0.96dnb.mongodb.net/taskdb?retryWrites=true&w=majority')
 .then(()=>{
     console.log("DB connected Sucessfuly")
 })
